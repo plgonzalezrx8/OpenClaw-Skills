@@ -2,6 +2,8 @@
 
 A collection of custom skills for ClawdBot, extending its capabilities with specialized commands and integrations.
 
+> **Note:** Each skill is published individually on [ClawdHub](https://clawdhub.com) for easy installation and use. This repository is the development home for collaboration, contributions, and skill improvements.
+
 ## What are ClawdBot Skills?
 
 ClawdBot skills are modular extensions that add new capabilities to ClawdBot through shell scripts and command-line tools. Each skill is self-contained with its own documentation and dependencies.
@@ -65,13 +67,30 @@ The `SKILL.md` file includes:
 
 ## Contributing
 
-Want to add your own skill?
+We welcome contributions! Whether you're fixing bugs, improving documentation, or adding new skills, your help is appreciated.
 
-1. Create a new directory for your skill
-2. Add a `SKILL.md` file with proper metadata and documentation
-3. Implement your functionality in shell scripts or executables
-4. Test thoroughly on the target platform(s)
-5. Submit a pull request
+### How to Contribute
+
+1. **Fork the repository** and create your branch from `master`
+2. **Create a new directory** for your skill (if adding one)
+3. **Add a `SKILL.md` file** with proper metadata and documentation
+4. **Implement your functionality** in shell scripts or executables
+5. **Test thoroughly** on the target platform(s)
+6. **Submit a pull request** with a clear description of your changes
+
+### Pull Request Guidelines
+
+- Keep PRs focused on a single change
+- Update documentation if you change functionality
+- Ensure scripts are executable and include proper shebangs
+- Test on all platforms your skill claims to support
+- Follow existing code style and naming conventions
+
+### Reporting Issues
+
+- Use the issue tracker for bugs and feature requests
+- Include your OS, ClawdBot version, and steps to reproduce
+- Check existing issues before creating a new one
 
 ### Skill Metadata Format
 

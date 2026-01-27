@@ -1,0 +1,102 @@
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Log Files
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temporary Files
+*.tmp
+*.temp
+*.bak
+*.cache
+.temp/
+tmp/
+
+# Node.js (if skills use Node)
+node_modules/
+package-lock.json
+yarn.lock
+.npm/
+.yarn/
+
+# Python (if skills use Python)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+*.egg
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# Build Artifacts
+*.o
+*.a
+*.exe
+*.out
+
+# Coverage Reports
+coverage/
+*.cover
+.coverage
+.coverage.*
+htmlcov/
+
+# macOS Extended Attributes
+.AppleDouble
+.LSOverride
+
+# Windows Shortcuts
+*.lnk
+
+# Testing
+.tox/
+.nox/
+.hypothesis/
+
+# Backup Files
+*~
+\#*\#
+.#*
+
+# Skill Runtime Data
+**/memory/
+**/compressed/
+**/context/
+*.summary.md
+.learnings/
+.clawdhub/
+**/.clawdhub/
