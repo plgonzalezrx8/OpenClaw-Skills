@@ -98,5 +98,5 @@ htmlcov/
 **/context/
 *.summary.md
 .learnings/
-.clawdhub/
-**/.clawdhub/
+.openclawhub/
+**/.openclawhub/

@@ -8,7 +8,7 @@
 
 ## Problem Statement
 
-Clawdbot/Moltbot sessions accumulate context over time, eventually hitting token limits (100k default). When context exceeds limits:
+OpenClaw sessions accumulate context over time, eventually hitting token limits (100k default). When context exceeds limits:
 - Performance degrades
 - Model becomes "dumb"
 - Sessions become unusable
@@ -26,7 +26,7 @@ Clawdbot/Moltbot sessions accumulate context over time, eventually hitting token
 
 1. **AI Summarization**: Ask the agent to summarize its own context (it has full visibility)
 2. **Backup**: Save original JSONL to `memory/compressed/`
-3. **Reset**: Delete the JSONL file (official reset method per Moltbot docs)
+3. **Reset**: Delete the JSONL file (official reset method)
 4. **Inject**: Send AI summary as first message in fresh session
 5. **Result**: Same session key, compressed context
 
@@ -60,19 +60,19 @@ Clawdbot/Moltbot sessions accumulate context over time, eventually hitting token
 
 ### 1. `/reset` Via CLI Doesn't Work
 
-Sending `/reset` via `clawdbot agent --session-id` treats it as a regular message - the agent interprets it as a task instead of a command.
+Sending `/reset` via `openclaw agent --session-id` treats it as a regular message - the agent interprets it as a task instead of a command.
 
-**Solution:** Delete the JSONL file directly (official method per Moltbot docs).
+**Solution:** Delete the JSONL file directly (official method).
 
 ### 2. JSONL Deletion Is Safe
 
-Per Moltbot documentation:
+Per OpenClaw documentation:
 > "Manual reset: delete specific keys from the store or remove the JSONL transcript; the next message recreates them."
 
 The script now:
 1. Backs up JSONL before deletion
 2. Deletes JSONL file
-3. Injects summary via `clawdbot agent --to main`
+3. Injects summary via `openclaw agent --to main`
 4. New session is created automatically
 
 ### 3. AI Summarization Is Superior
@@ -118,7 +118,7 @@ These still work but produce inferior results compared to AI summarization.
 ## Next Steps (Optional)
 
 1. [ ] Add to heartbeat for automatic compression checks
-2. [ ] Configure Moltbot's built-in compaction as backup
+2. [ ] Configure OpenClaw's built-in compaction as backup
 3. [ ] Add custom summarization prompts
 4. [ ] Integration with other sessions (Slack, cron)
 

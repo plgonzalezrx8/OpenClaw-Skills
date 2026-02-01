@@ -2,7 +2,7 @@
 
 ## Reporting a Vulnerability
 
-If you discover a security vulnerability in ClawdBot Skills, please report it responsibly:
+If you discover a security vulnerability in OpenClaw Skills, please report it responsibly:
 
 1. **Do not** open a public issue
 2. **Do** open a private security advisory via GitHub's security tab
@@ -29,11 +29,11 @@ We provide security updates for the latest release. Older versions may not recei
 
 ## Security Best Practices
 
-When using ClawdBot Skills:
+When using OpenClaw Skills:
 
 - Review scripts before running them
 - Keep your system and dependencies updated
 - Use appropriate file permissions
 - Be cautious with skills that require elevated privileges
 
-Thank you for helping keep ClawdBot Skills secure!
+Thank you for helping keep OpenClaw Skills secure!

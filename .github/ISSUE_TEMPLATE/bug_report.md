@@ -24,7 +24,7 @@ What actually happened.
 ## Environment
 - **OS:** [e.g., macOS 14.1, Ubuntu 22.04, Windows 11]
 - **Skill:** [e.g., apple-remind-me]
-- **ClawdBot Version:** [if applicable]
+- **OpenClaw Version:** [if applicable]
 
 ## Additional Context
 Add any other context about the problem here, such as error messages, logs, or screenshots.
